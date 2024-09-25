@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOT LABS</title>
+    <style>
+        .metric-container {
+            display: flex;
+            justify-content: center; /* Centraliza os itens horizontalmente */
+            align-items: center; /* Centraliza verticalmente dentro do contêiner */
+            gap: 200px; /* Espaçamento entre os ícones */
+            white-space: nowrap; /* Garante que não quebre linha */
+            margin-top: 100px;
+        }
+
+        .metric {
+            text-align: center;
+        }
+
+        .metric img {
+            width: 100px; /* Tamanho da imagem */
+            height: 100px; /* Tamanho da imagem */
+            background: none; /* Remove o fundo sólido */
+            padding: 10px;
+            box-sizing: border-box; /* Inclui o padding nas dimensões totais */
+        }
+
+        /* Ajustando para alinhar o texto das métricas */
+        .metric p, .metric h2 {
+            margin: 5px 0;
+            color: white;
+            font-family: Arial, sans-serif; /* Define a fonte como Arial */
+            text-transform: uppercase; /* Coloca o texto em maiúsculas */
+        }
+
+        .metric h2 {
+            font-size: 24px; /* Tamanho maior para o valor da métrica */
+        }
+
+        .metric p {
+            font-size: 16px; /* Tamanho do texto da métrica */
+        }
+
+        /* Fundo do body com gradiente */
+        body {
+            background: linear-gradient(135deg, #9b59b6, #3e52c1);
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Garante que o body cubra toda a altura da tela */
+        }
+    </style>
+</head>
+<body>
+
+<div class="metric-container">
+    <div class="metric">
+        <img src="https://cdn-icons-png.flaticon.com/128/423/423000.png" alt="Room Temperature">
+        <p>Temperatura</p>
+        <h2>27°C</h2>
+    </div>
+    <div class="metric">
+        <img src="https://cdn-icons-png.flaticon.com/128/1146/1146864.png" alt="Room Humidity">
+        <p>Umidade</p>
+        <h2>35%</h2>
+    </div>
+    <div class="metric">
+        <img src="https://cdn-icons-png.flaticon.com/128/4503/4503028.png" alt="Heart Rate">
+        <p>Aceleração</p>
+        <h2>70 BPM</h2>
+    </div>
+    <div class="metric">
+        <img src="https://cdn-icons-png.flaticon.com/128/1163/1163658.png" alt="Blood Oxygen">
+        <p>Oxigênio</p>
+        <h2>96%</h2>
+    </div>
+</div>
+
+</body>
+</html>
